@@ -68,7 +68,7 @@ console.log(howManySeconds(4));
 // Niveau : difficile
 // Énoncé : Retourne "Boom!" si le chiffre 7 est présent dans le tableau.
 function sevenBoom(arr) {
-    const combined = arr.join(" ");
+    const combined = arr.join("");
     if (combined.includes("7")){
         return "Boom";
     } else {
@@ -143,7 +143,7 @@ console.log(nextNumber(27));
 // Énoncé : Vérifie si un nombre est symétrique (palindrome).
 function isSymmetrical(num) {
     const str = num.toString();
-    const reverserd = str.split(" ").reverse().join(" ");
+    const reverserd = str.split("").reverse().join("");
     return str === reverserd;
 }
 console.log(isSymmetrical(121));
